@@ -1,0 +1,49 @@
+*{margin: 0;
+    font-family: 'Playfair Display', serif;}
+body{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100vh;
+}
+#main{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(217deg, rgba(250, 152, 15, 0.897), rgba(255,0,0,0) 70.71%),
+            linear-gradient(127deg, rgba(240, 121, 10, 0.8), rgba(0,255,0,0) 70.71%),
+            linear-gradient(336deg, rgba(255, 125, 50, 0.851), rgba(0,0,255,0) 70.71%);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 240px 180px 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    place-items: center;
+}
+#brain{
+    grid-area: 1 / 1 / 4 / 2;
+    height: 500px;
+    margin-left: -40px;
+}
+#title{
+    grid-area: 1 / 2 / 2 / 3;
+    font-size: 95px;
+    margin-top: -70px;
+    margin-left: -150px;
+}
+#arrow{
+    grid-area: 2 / 2 / 3 / 3;
+    height: 150px;
+    rotate: 180deg;
+    place-self: start;
+    margin-top: -50px;
+    margin-left: -30px;
+}
+#text{
+    grid-area: 3 / 2 / 4 / 3;
+    place-self: start;
+    justify-self: center;
+    font-size: 22px;
+    margin-top: -240px;
+}
